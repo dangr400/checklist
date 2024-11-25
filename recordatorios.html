@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                display: flex;
+            }
+            
+        </style>
+        <script lang="javascript">
+            function tachar(num){
+                var id = "" + num
+                var padre = document.getElementById(id);
+                texto = padre.getElementsByTagName("p")[0].style.textDecoration = "line-through";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="1">
+            <input type="checkbox" onclick="tachar(1)"/>
+            <p>TEXTO</p>
+        </div>
+        <div id="2">
+            <input type="checkbox" onclick="tachar(2)"/>
+            <p>TEXTO</p>
+        </div>
+        <div id="3">
+            <input type="checkbox" onclick="tachar(3)"/>
+            <p>TEXTO</p>
+        </div>
+        <div id="4">
+            <input type="checkbox" onclick="tachar(4)"/>
+            <p>TEXTO</p>
+        </div>
+    </body>
+</html>
